@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BatchGeo Integration Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .map-embed {
+            margin-bottom: 20px;
+        }
+        .locator-form {
+            margin-bottom: 20px;
+        }
+        .badge-link img {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Embedded BatchGeo Map</h2>
+<div class="map-embed">
+    <iframe src='https://batchgeo.com/map/d4f1f19115371785e67655b08827d451' frameborder='0' width='100%' height='550' sandbox='allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-modals allow-forms' allow='geolocation https://batchgeo.com' style='border:1px solid #aaa; position: relative;' scrolling='no'></iframe>
+    <p><small>View <a href='https://batchgeo.com/map/d4f1f19115371785e67655b08827d451'>Prokeep Contractors Map</a> in a full screen map</small></p>
+</div>
+
+<h2>Locator Form</h2>
+<div class="locator-form">
+    <form action="https://batchgeo.com/map/">
+        <input type="hidden" name="i" value="d4f1f19115371785e67655b08827d451">
+        <label>Search for nearest location: <input type="text" name="q" value=""></label>
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+</body>
+</html>
